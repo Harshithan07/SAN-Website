@@ -1,0 +1,144 @@
+/* body styles */
+
+body {
+    background-image: url("bg1.png");
+    background-color: #cccccc;
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+/* header styles */
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+/* menu list styles */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.food-item {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.food-item img {
+    max-width: 100%;
+}
+
+.food-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.food-item p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.add-to-cart,
+.remove-from-cart {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-from-cart {
+    background-color: #e74c3c;
+}
+
+.add-to-cart:hover,
+.remove-from-cart:hover {
+    background-color: #27ae60;
+}
+
+
+/* cart styles */
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.cart-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #27ae60;
+}

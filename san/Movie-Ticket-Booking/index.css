@@ -1,0 +1,124 @@
+/* Theme CSS */
+
+body {
+    background-color: #e4f376;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007BFF;
+    margin: 2rem 0;
+}
+
+.form-group {
+    margin-right: 2rem;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.submitBtn {
+    border-radius: 0.5rem;
+    background-color: #007BFF;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: white;
+    margin-top: 2rem;
+}
+
+.error {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.screen-ui {
+    background-color: #F5F5F5;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#screen {
+    background-color: #007BFF;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table {
+    margin-bottom: 2rem;
+}
+
+.reserved-seat {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+.empty-seat {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+.booked-seat-map {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.reserved-seat-map {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.empty-seat-map {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.table-bordered {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: none;
+    padding: 1rem;
+}
+
+.table-bordered th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.table-bordered td {
+    border-top: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-bottom: none;
+}
+
+.table-bordered td:last-child {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.table-bordered td:first-child {
+    font-weight: bold;
+    width: 15%;
+}

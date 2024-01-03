@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkout</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+
+    <div id="cart-items"></div>
+
+    <button onclick="placeOrder()">Place Order</button>
+    <script>
+        function displayCart() {
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+            const cartItemsDiv = document.querySelector('#cart-items');
+
+            cartItems.forEach((item) => {
+                const itemDiv = document.createElement('div');
+                const totalCost = item.amount * 10;
+                itemDiv.textContent = `${item.name} x ${item.amount} ($${totalCost})`;
+                cartItemsDiv.appendChild(itemDiv);
+            });
+
+            const totalCost = cartItems.reduce((total, item) => {
+                return total + item.amount * 10;
+            }, 0);
+            document.querySelector('#total').textContent = `$${totalCost}`;
+        }
+
+        function placeOrder() {
+            alert('Order placed!');
+            localStorage.removeItem('cart');
+            window.location.href = 'index.html';
+            window.location.href = 'summary.html';
+        }
+
+        displayCart();
+    </script>
+
+
+</body>
+
+</html>
